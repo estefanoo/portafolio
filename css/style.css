@@ -217,6 +217,18 @@ body{
     width: 50px;
 }
 
+/* ocultar elemento */
 .hideElement{
     display: none;
+}
+
+
+/* //// Media Query //// */
+
+@media screen and (max-width:425px){
+
+    /* titulo portada */
+    .presentation h1{font-size: 40px;}
+    .presentacion__llaves{font-size: 80px;}
+    .presentacion__palabras {font-size: 60px;}
 }
