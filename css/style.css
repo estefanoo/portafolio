@@ -1,0 +1,222 @@
+/* ///////////// */
+/* css generales */
+/* ///////////// */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,p,a,h1,h2{color: black;}
+
+h2{ 
+    font-size: 40px;
+    font-weight: 700;
+}
+
+a{text-decoration: none;}
+
+body{
+    background-color: #f6f6f7;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+}
+
+/* ///////////////////// */
+/*   css de la pagina    */
+/* ///////////////////// */
+
+.container{
+    height: auto;
+    width: 100%;
+}
+
+/* section 1 : presentation */
+
+.presentation{
+    align-items: center;
+    background-image: url('../images/notebook2.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.presentation h1{font-size: 60px;}
+
+.presentacion__llaves{
+    font-size: 100px;
+    font-weight: 700;
+}
+.presentacion__palabras {
+    font-family: 'Caveat', cursive;
+    color: #109fe1;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+/* section 2 : portafolio */
+
+.portafolio{
+    align-items: center;
+    background-color: #e0ece4;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    padding: 20px;
+    transition: ease-in 1s;
+    width: 100%;
+}
+
+.portafolio__proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+}
+
+/* targetas de cada proyectos*/
+
+.portafolio__proyecto{
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    color:black;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.portafolio__proyecto p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portafolio__proyecto-imagen img{
+    height: 200px;
+    width: 100%;
+}
+
+.portafolio__proyecto-botones{padding: 20px 0;}
+
+.portafolio__proyecto-botones a{
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: 5px 20px;
+    transition: ease .2s;
+}
+
+.portafolio__proyecto-botones a:hover{
+    background-color: gray;
+    color: white;
+}
+
+/* section 3 : tecnologias */
+.tecnologias{
+    background-color: #ff4b5c;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+    transition: ease-in 1s;
+    width: 100%;
+}
+
+.tecnologias__items{margin-top: 10px;}
+
+.tecnologias__items img{
+    margin: 0 20px;
+    width: 100px;
+}
+
+
+/* section 4 : sobre mi */
+.sobreMi{
+    background-color: #056674;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    padding: 20px;
+    transition: ease-in 1s;
+    width: 100%;
+}
+
+.sobreMi__tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sobreMi__tarjeta{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.sobreMi__tarjeta-imagen img{
+    height: 100px;
+    width: 250px;
+}
+
+.sobreMi__tarjeta p{
+    font-size: 20px;
+}
+
+.sobreMi__tarjeta:first-child .sobreMi__tarjeta-imagen img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+/* #77838c */
+
+.contacto{
+    background-color: #66bfbf;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.contacto__items{
+    display: flex;
+    margin:0 10px;
+}
+
+.contacto__item img{
+    margin: 0 20px;
+    width: 50px;
+}
+
+.hideElement{
+    display: none;
+}
